@@ -1,0 +1,31 @@
+{
+  "name": "client-bluesky",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start:prod": "node dist/index.js",
+    "start:dev": "nodemon",
+    "build": "tsc",
+    "clean": "rm -Rf dist/*",
+    "prebuild": "npm run clean",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@atproto/api": "^0.12.13",
+    "axios": "^1.6.8",
+    "cron": "^3.1.7",
+    "dotenv": "^16.4.5",
+    "twitter-api-v2": "^1.16.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
